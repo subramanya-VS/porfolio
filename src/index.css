@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 79 70 229;
+    --color-secondary: 99 102 241;
+  }
+
+  .dark {
+    --color-primary: 129 140 248;
+    --color-secondary: 165 180 252;
+    background-color: black;
+  }
+}
+.icon {
+  font-size: 100px; /* Increased font size */
+  color: #ff9966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  30% { transform: translate(3%, -15%); }
+  50% { transform: translate(12%, 9%); }
+  70% { transform: translate(9%, 4%); }
+  90% { transform: translate(-1%, 7%); }
+}
+
+@keyframes glow {
+  0%, 100% { filter: brightness(100%) blur(4px); }
+  50% { filter: brightness(150%) blur(8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+html {
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
+}
+
+body {
+  @apply antialiased;
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) {
+  html {
+    cursor: auto;
+  }
+  
+  a, button {
+    cursor: auto;
+  }
+  
+  .custom-cursor {
+    display: none;
+  }
+
+  
+}
