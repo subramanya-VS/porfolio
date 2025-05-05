@@ -9,12 +9,12 @@ import BlurText from '../styles/BlurText';
 const projects = [
   {
     id: 1,
-    title: "AI-Powered Analytics Platform",
-    description: "A machine learning platform that processes and analyzes large datasets in real-time.",
+    title: "Email Spam Detection System",
+    description: "A comprehensive spam detection system utilizing machine learning with Logistic Regression and cross-validation for robust performance.",
     category: "Machine Learning",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["Python", "TensorFlow", "React", "AWS"],
-    link: "https://github.com"
+    image: "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2019/08/27120406/abstract-spam_SL_pic-800x450.jpg",
+    technologies: ["Python", "Scikit-learn", "NumPy"],
+    link: "https://github.com/subramanya-VS/spam_detection"
   },
   {
     id: 2,
