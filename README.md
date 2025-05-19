@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Framer 
 
 ## 🌐 Live Demo
 
-[View Portfolio](your-deployed-url-here)
+[My Portfolio](https://portfolio-subramanya.vercel.app/)
 
 ## ✨ Features
 
@@ -91,6 +91,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Contact
 
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/vss04/)
-- GitHub: [Your GitHub](https://github.com/subramanya-VS)
+- LinkedIn:[(https://www.linkedin.com/in/vss04/)](https://www.linkedin.com/in/vss04/)
 - Email: vssubramanya04@gmail.com
