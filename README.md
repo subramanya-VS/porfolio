@@ -54,8 +54,6 @@ npm run dev
 ## 📱 Responsive Design
 
 The portfolio is optimized for:
-- Mobile devices
-- Tablets
 - Desktop screens
 
 ## 🤝 Contributing
