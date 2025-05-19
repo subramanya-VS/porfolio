@@ -25,29 +25,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Framer 
 - Framer Motion
 - Lucide Icons
 
-## 🏗 Project Structure
-
-```
-portfolio/
-├── src/
-│   ├── components/
-│   │   ├── About
-│   │   ├── Contact
-│   │   ├── CustomCursor
-│   │   ├── Education
-│   │   ├── Hero
-│   │   ├── Projects
-│   │   ├── Skills
-│   │   └── ThemeToggle
-│   ├── styles/
-│   │   ├── AnimatedContent
-│   │   ├── BlurText
-│   │   ├── GlowCard
-│   │   ├── GradientText
-│   │   └── RotatingText
-│   └── App.tsx
-```
-
 ## 🚀 Getting Started
 
 1. Clone the repository:
