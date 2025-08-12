@@ -7,7 +7,8 @@ const education = [
   {
     degree: "Bachelors in information science & engineering",
     institution: "M S Ramaiah university of applied sciences",
-    period: "2022 - 2026"
+    period: "2022 - 2026",
+    description: "GPA: 9.06"
   },
 ];
 
