@@ -80,16 +80,17 @@ export const Education: React.FC = () => {
 
         {/* Download Resume Section */}
         <div className="text-center mt-16">
-          <h3 className="text-2xl font-bold mb-4">Download My Resume</h3>
+          <h3 className="text-2xl font-bold mb-4">View My Resume</h3>
           <p className="text-lg text-secondary mb-6">
-            Click the button below to get a copy of my resume.
+            Click the button below to open my resume.
           </p>
           <a
-            href="/assets/YourName_Resume.pdf"
-            download="YourName_Resume.pdf"
+            href="https://1drv.ms/w/c/02371f8816c60400/ETvTcNiddVhDnr5b3axA2iAB87AWbhM2jd8_yflaKclxdg?e=e8H1Fa"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg shadow-lg hover:bg-primary-dark transition duration-300"
           >
-            Download Resume
+            View Resume
           </a>
         </div>
       </div>

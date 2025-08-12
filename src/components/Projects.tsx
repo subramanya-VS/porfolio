@@ -6,6 +6,7 @@ import GlowCard from '../styles/GlowCard';
 import AnimatedContent from '../styles/AnimatedContent'; // Adjust path if needed
 import GradientText from '../styles/GradientText';
 import BlurText from '../styles/BlurText';
+
 const projects = [
   {
     id: 1,
@@ -14,26 +15,29 @@ const projects = [
     category: "Machine Learning",
     image: "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2019/08/27120406/abstract-spam_SL_pic-800x450.jpg",
     technologies: ["Python", "Scikit-learn", "NumPy"],
-    link: "https://github.com/subramanya-VS/spam_detection"
+    link: "https://github.com/subramanya-VS/spam_detection",
+    // no demo for this one
   },
   {
     id: 2,
-    title: "Distributed System Architecture",
-    description: "Scalable microservices architecture handling millions of requests.",
-    category: "Backend",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["Go", "Docker", "Kubernetes", "gRPC"],
-    link: "https://github.com"
+    title: "weather dashboard app",
+    description: "Displays real-time weather information for a given city or the user's current location using the OpenWeatherMap API. Shows Temperature, Feels-like, Conditions, Humidity, Wind speed, Rain volume.",
+    category: "Frontend",
+    image: "https://s3-alpha.figma.com/hub/file/6422877612/800966cc-495a-4d7f-8afe-e5f2a3e89456-cover.png",
+    technologies: ["JavaScript", "HTML", "CSS", "React"],
+    link: "https://github.com/subramanya-VS/weatherDashboardApp",
+    demo: "https://weatherdashboard-subramanya.vercel.app/"
   },
   {
     id: 3,
-    title: "Real-time Collaboration Tool",
-    description: "WebSocket-based platform enabling real-time document collaboration.",
-    category: "Full Stack",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["TypeScript", "React", "Node.js", "WebSocket"],
-    link: "https://github.com"
-  }
+    title: "Satellite Image Classification",
+    description: "Built a TensorFlow transfer-learning pipeline using a frozen VGG16 base and custom dense head with Keras ImageDataGenerator for augmentation, achieving 95.82% test accuracy and 0.95 F1-score.",
+    category: "Deep learning",
+    image: "https://storage.googleapis.com/kaggle-datasets-images/1544742/2546969/587dbc48162374bca68d9f8c10299a90/dataset-cover.jpg?t=2021-08-21-19-05-27",
+    technologies: ["Python", "Tensorflow", "Keras", "Scikit-learn"],
+    link: "https://github.com/subramanya-VS/CNN/"
+    // demo could be added when available
+  },
 ];
 
 const categories = ["All", ...Array.from(new Set(projects.map(p => p.category)))];
@@ -72,12 +76,12 @@ export const Projects: React.FC = () => {
           className="text-center mb-12"
         >
           <BlurText
-          text="Projects"
-          delay={50}
-          className="text-4xl font-bold mb-4"
-          animateBy="letters"
-          direction="top"
-        />
+            text="Projects"
+            delay={50}
+            className="text-4xl font-bold mb-4"
+            animateBy="letters"
+            direction="top"
+          />
           <GradientText className="text-xl text-secondary mb-10" colors={["#40ffaa, #4079ff, #40ffaa, #4079ff, #40ffaa"]} animationSpeed={7} showBorder={true}>
             Showcasing my technical expertise through real-world applications
           </GradientText>
@@ -142,16 +146,19 @@ export const Projects: React.FC = () => {
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                           className="p-2 rounded-full hover:bg-primary/10"
+                          aria-label={`${project.title} GitHub`}
                         >
                           <Github className="w-5 h-5" />
                         </motion.a>
+
                         <motion.a
-                          href={project.link}
+                          href={project.demo ?? project.link}
                           target="_blank"
                           rel="noopener noreferrer"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                           className="p-2 rounded-full hover:bg-primary/10"
+                          aria-label={`${project.title} Live Demo`}
                         >
                           <ExternalLink className="w-5 h-5" />
                         </motion.a>
